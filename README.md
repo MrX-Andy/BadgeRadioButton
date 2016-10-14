@@ -21,6 +21,17 @@
             />
 ```
 直接使用，可以在xml中配置提示数字背景颜色、字体大小、字体颜色。
+#attrs
+```java
+        <!-- 提示数字背景颜色 -->
+        <attr name="badge_bg_color" format="color"/>
+        <!-- 提示数字颜色 -->
+        <attr name="badge_txt_color" format="color"/>
+        <!-- 提示数字大小 -->
+        <attr name="badge_txt_size" format="dimension|reference"/>
+        <!-- 提示数字 -->
+        <attr name="badge_txt_num" format="integer"/>
+```
 #Java
 ```java
 //设置数字
