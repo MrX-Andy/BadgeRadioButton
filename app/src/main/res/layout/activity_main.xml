@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    tools:context="com.mph.badgeradiobutton.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/set_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置消息数字为60" />
+        <Button
+            android:id="@+id/clear_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除联系人数字" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_home_select_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:background="#ffffff"
+        >
+
+        <com.mph.badgeradiobutton.widget.BadgeRadioButton
+            android:id="@+id/rb_home_tab_msg"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingLeft="0dp"
+            app:badge_bg_color="#ff0000"
+            app:badge_txt_num="120"
+            android:drawableTop="@drawable/rb_home_msg_selecter"
+            />
+        <com.mph.badgeradiobutton.widget.BadgeRadioButton
+            android:id="@+id/rb_home_tab_contacts"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:paddingLeft="0dp"
+            app:badge_bg_color="#2a95f9"
+            app:badge_txt_num="90"
+            android:drawableTop="@drawable/rb_home_contacts_selecter"
+            />
+        <com.mph.badgeradiobutton.widget.BadgeRadioButton
+            android:id="@+id/rb_home_tab_dynamic"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:paddingLeft="0dp"
+            app:badge_bg_color="#4eff08"
+            app:badge_txt_num="12"
+            android:drawableTop="@drawable/rb_home_dynamic_selecter"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>

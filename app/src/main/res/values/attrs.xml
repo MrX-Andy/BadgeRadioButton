@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BadgeRadioButton">
+        <!-- 提示数字背景颜色 -->
+        <attr name="badge_bg_color" format="color"/>
+        <!-- 提示数字颜色 -->
+        <attr name="badge_txt_color" format="color"/>
+        <!-- 提示数字大小 -->
+        <attr name="badge_txt_size" format="dimension|reference"/>
+        <!-- 提示数字 -->
+        <attr name="badge_txt_num" format="integer"/>
+    </declare-styleable>
+
+</resources>
